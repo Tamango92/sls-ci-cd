@@ -1,9 +1,21 @@
 {
-  "name": "aws-node-simple-http-endpoint",
+  "name": "sls-ci-cd",
   "version": "1.0.0",
-  "description": "Example demonstrates how to setup a simple HTTP GET endpoint",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamango92/sls-ci-cd.git"
+  },
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamango92/sls-ci-cd/issues"
+  },
+  "homepage": "https://github.com/Tamango92/sls-ci-cd#readme",
   "devDependencies": {
     "serverless-mocha-plugin": "^1.12.0"
   }

@@ -1,12 +1,15 @@
 'use strict';
 
-module.exports.endpoint = (event, context, callback) => {
-  const response = {
+module.exports.hello = async event => {
+  return {
     statusCode: 200,
-    body: JSON.stringify({
-      message: `Hello, the current time is ${new Date().toTimeString()}.`,
-    }),
+    body: JSON.stringify(
+      {
+        message: 'Go Serverless v1.0! Your function executed successfully!',
+        input: event,
+      },
+      null,
+      2
+    ),
   };
-
-  callback(null, response);
 };
